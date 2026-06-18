@@ -132,11 +132,8 @@
       font-size:.72rem; font-weight:700; letter-spacing:.12em;
       text-transform:uppercase; color:#0E6BA8; margin-bottom:14px;
     }
-    .sec-label::before { content:''; display:block; width:22px; height:2px; background:#0E6BA8; border-radius:2px; }
-
     /* White label variant for deep-blue CTA section */
     .sec-label-white { color:rgba(255,255,255,.85); }
-    .sec-label-white::before { background:rgba(255,255,255,.85); }
 
     /* ─── Stars ─── */
     .stars { color:#F59E0B; letter-spacing:.04em; }
@@ -160,17 +157,17 @@
 
     /* ─── Final CTA — bright blue gradient (not dark) ─── */
     .cta-bg {
-      background: linear-gradient(135deg, #0E6BA8 0%, #2A96D5 55%, #4DB7E5 100%);
+      background: linear-gradient(135deg, rgba(14,107,168,.82) 0%, rgba(42,150,213,.76) 55%, rgba(77,183,229,.72) 100%), url('brand_assets/cta.jpeg') center/cover no-repeat;
       position: relative; overflow:hidden;
     }
     .cta-bg::before {
       content:''; position:absolute; top:-40%; right:-10%; width:600px; height:600px;
-      background: radial-gradient(circle, rgba(255,255,255,.12) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(255,255,255,.10) 0%, transparent 65%);
       border-radius:50%; pointer-events:none;
     }
     .cta-bg::after {
       content:''; position:absolute; bottom:-40%; left:-10%; width:500px; height:500px;
-      background: radial-gradient(circle, rgba(34,199,199,.18) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(34,199,199,.14) 0%, transparent 65%);
       border-radius:50%; pointer-events:none;
     }
 
@@ -271,7 +268,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.19 19.79 19.79 0 010 2a2 2 0 012-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           (323) 498-2131
         </a>
-        <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="header" style="padding:11px 22px;font-size:.875rem;">
+        <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="header" style="padding:11px 22px;font-size:.875rem;">
           Get Quote
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -292,7 +289,7 @@
         <a href="#faq"          class="px-3 py-2.5 rounded-lg text-sm font-medium text-charcoal hover:bg-pool-100 hover:text-blue-deep transition-colors mobile-close">FAQ</a>
       </nav>
       <div class="flex flex-col gap-3 px-3">
-        <a href="#lead-form" class="btn-primary mobile-close" data-cta="tile-cleaning-quote" data-cta-location="mobile-menu">Get My Pool Tile Cleaning Quote</a>
+        <a href="#" class="btn-primary mobile-close" data-cta="tile-cleaning-quote" data-cta-location="mobile-menu">Get My Pool Tile Cleaning Quote</a>
         <a href="tel:3234982131" class="btn-outline" data-cta="call-text">Call/Text (323) 498-2131</a>
       </div>
     </div>
@@ -357,7 +354,7 @@
         </ul>
 
         <div class="fade-up flex flex-col sm:flex-row gap-4 mb-8" style="transition-delay:.3s">
-          <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="hero" style="font-size:1rem;padding:17px 32px;">
+          <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="hero" style="font-size:1rem;padding:17px 32px;">
             Get My Pool Tile Cleaning Quote
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -389,34 +386,12 @@
       <div class="relative fade-up" style="transition-delay:.18s">
         <div class="relative rounded-3xl overflow-hidden" style="box-shadow:0 8px 40px rgba(14,107,168,.14),0 2px 8px rgba(14,107,168,.08);">
           <img
-            src="https://placehold.co/760x600/4DB7E5/0E6BA8"
+            src="brand_assets/hero.jpeg"
             alt="Luxury Los Angeles backyard pool with clean bright waterline tile"
             class="w-full object-cover"
             style="aspect-ratio:4/3;"
           />
           <div class="absolute inset-0 img-overlay"></div>
-        </div>
-        <!-- Floating before/after card -->
-        <div class="absolute -bottom-5 -left-5 lg:bottom-6 lg:-left-10 hero-card" style="max-width:240px;">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0E6BA8,#0A5C8F);">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <div>
-              <p class="text-[10px] font-bold tracking-widest uppercase text-blue-deep leading-none mb-0.5">Most Common Issue</p>
-              <p class="text-sm font-bold text-charcoal leading-tight">Calcium Build-Up Removed</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-            <div class="rounded-lg overflow-hidden">
-              <img src="https://placehold.co/120x75/c4b5a0/7a6858" alt="Before: calcium buildup" class="w-full object-cover" />
-              <div class="text-center py-1 bg-gray-100 text-[10px] font-bold tracking-wider text-gray-600">BEFORE</div>
-            </div>
-            <div class="rounded-lg overflow-hidden">
-              <img src="https://placehold.co/120x75/4DB7E5/0E6BA8" alt="After: clean pool tile" class="w-full object-cover" />
-              <div class="text-center py-1 text-[10px] font-bold tracking-wider text-white" style="background:#0E6BA8;">AFTER</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -473,7 +448,7 @@
     </div>
 
     <div class="text-center mb-10 fade-up" style="transition-delay:.18s">
-      <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="offer" style="font-size:1.05rem;padding:18px 36px;">
+      <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="offer" style="font-size:1.05rem;padding:18px 36px;">
         Claim My Tile Cleaning Quote
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -567,7 +542,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
       <div class="fade-up" style="transition-delay:.08s">
         <div class="relative rounded-2xl overflow-hidden" style="box-shadow:0 4px 24px rgba(14,107,168,.1);border:1px solid #D8EAF2;">
-          <img src="https://placehold.co/760x500/c4b5a0/7a6858" alt="Before pool tile cleaning: calcium buildup and staining on waterline tile" class="w-full object-cover" style="aspect-ratio:3/2;" />
+          <img src="brand_assets/before.jpeg" alt="Before pool tile cleaning: calcium buildup and staining on waterline tile" class="w-full object-cover" style="aspect-ratio:3/2;" />
           <div class="absolute inset-0 img-overlay"></div>
           <div class="absolute bottom-5 left-5">
             <span class="inline-block bg-white/95 text-charcoal text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full" style="box-shadow:0 2px 8px rgba(0,0,0,.12);">
@@ -578,7 +553,7 @@
       </div>
       <div class="fade-up" style="transition-delay:.16s">
         <div class="relative rounded-2xl overflow-hidden" style="box-shadow:0 4px 24px rgba(14,107,168,.1);border:1px solid #D8EAF2;">
-          <img src="https://placehold.co/760x500/4DB7E5/0E6BA8" alt="After pool tile cleaning: clean bright waterline tile on restored pool edge" class="w-full object-cover" style="aspect-ratio:3/2;" />
+          <img src="brand_assets/after.jpeg" alt="After pool tile cleaning: clean bright waterline tile on restored pool edge" class="w-full object-cover" style="aspect-ratio:3/2;" />
           <div class="absolute inset-0 img-overlay" style="background:linear-gradient(to top,rgba(14,70,110,.5) 0%,transparent 55%);"></div>
           <div class="absolute bottom-5 left-5">
             <span class="inline-block text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full" style="background:#0E6BA8;">
@@ -590,7 +565,7 @@
     </div>
 
     <div class="text-center fade-up" style="transition-delay:.24s">
-      <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="before-after" style="font-size:1rem;padding:17px 34px;">
+      <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="before-after" style="font-size:1rem;padding:17px 34px;">
         See What Tile Cleaning Can Do For My Pool
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -695,61 +670,9 @@
     </div>
 
     <div class="text-center mt-14 fade-up" style="transition-delay:.35s">
-      <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="process" style="font-size:1rem;padding:17px 34px;">
+      <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="process" style="font-size:1rem;padding:17px 34px;">
         Start With a Free Quote
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================================
-     TRUST
-================================================================ -->
-<section id="trust" class="py-20 lg:py-28 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div class="text-center mb-14 fade-up">
-      <div class="sec-label justify-center">Why Choose Us</div>
-      <h2 class="font-display font-bold text-charcoal leading-tight" style="font-size:clamp(2rem,4vw,3.25rem);letter-spacing:-0.025em;">
-        Why Los Angeles Homeowners<br class="hidden sm:block" /> Choose Showtime Pools
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-      <div class="card-shadow rounded-2xl p-7 bg-white fade-up" style="border:1px solid #D8EAF2;transition-delay:.06s">
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,#0E6BA8,#0A5C8F);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3 class="font-display font-bold text-charcoal text-xl mb-2 leading-snug">Licensed &amp; Insured</h3>
-        <p class="text-muted text-sm leading-[1.8]">Showtime Pools operates as a fully licensed and insured pool service company in California.</p>
-      </div>
-      <div class="card-shadow rounded-2xl p-7 bg-white fade-up" style="border:1px solid #D8EAF2;transition-delay:.13s">
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,#0E6BA8,#0A5C8F);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <h3 class="font-display font-bold text-charcoal text-xl mb-2 leading-snug">Local Los Angeles Pool Team</h3>
-        <p class="text-muted text-sm leading-[1.8]">We're based in Los Angeles and serve homeowners across the Valley, Westside, South Bay, and beyond.</p>
-      </div>
-      <div class="card-shadow rounded-2xl p-7 bg-white fade-up" style="border:1px solid #D8EAF2;transition-delay:.2s">
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,#0E6BA8,#0A5C8F);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-        </div>
-        <h3 class="font-display font-bold text-charcoal text-xl mb-2 leading-snug">Clear Recommendations</h3>
-        <p class="text-muted text-sm leading-[1.8]">We explain what cleaning can and can't do for your pool so you're never guessing about what comes next.</p>
-      </div>
-      <div class="card-shadow rounded-2xl p-7 bg-white fade-up" style="border:1px solid #D8EAF2;transition-delay:.27s">
-        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,#0E6BA8,#0A5C8F);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <h3 class="font-display font-bold text-charcoal text-xl mb-2 leading-snug">Remodel + Equipment Support</h3>
-        <p class="text-muted text-sm leading-[1.8]">If tile cleaning reveals larger concerns, Showtime Pools can handle those repairs and upgrades too.</p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto text-center fade-up" style="transition-delay:.35s">
-      <p class="text-muted text-sm leading-[1.9] rounded-2xl px-8 py-6 bg-pool-50" style="border:1.5px solid #D8EAF2;">
-        If tile cleaning reveals damaged tile, coping, plaster, or equipment concerns, Showtime Pools can explain the next best option without pressure. We want you to make the right call for your pool and your home.
-      </p>
     </div>
   </div>
 </section>
@@ -983,7 +906,7 @@
         Request a pool tile cleaning quote and get a clear recommendation from Showtime Pools. No pressure — just honest advice.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#lead-form" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="final" style="font-size:1.05rem;padding:18px 36px;background:linear-gradient(135deg,#fff,#EAF8FD);color:#0E6BA8;box-shadow:0 4px 20px rgba(0,0,0,.15);">
+        <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" class="btn-primary" data-cta="tile-cleaning-quote" data-cta-location="final" style="font-size:1.05rem;padding:18px 36px;background:linear-gradient(135deg,#fff,#EAF8FD);color:#0E6BA8;box-shadow:0 4px 20px rgba(0,0,0,.15);">
           Get My Pool Tile Cleaning Quote
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -996,82 +919,146 @@
   </div>
 </section>
 
+</main>
+
 <!-- ================================================================
-     LEAD FORM
+     QUOTE MODAL
 ================================================================ -->
-<section id="lead-form" class="py-20 lg:py-28 bg-light">
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="card-shadow rounded-3xl p-8 lg:p-12 bg-white fade-up" style="border:1px solid #D8EAF2;">
+<div id="quote-modal" style="display:none;position:fixed;inset:0;z-index:9999;overflow-y:auto;">
+  <div id="modal-backdrop" onclick="closeQuoteModal()" style="position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);"></div>
+  <div style="position:relative;z-index:1;display:flex;align-items:flex-start;justify-content:center;min-height:100%;padding:24px 16px;">
+    <div style="background:#fff;border-radius:20px;overflow:hidden;width:100%;max-width:460px;box-shadow:0 24px 64px rgba(0,0,0,.28);margin:auto;">
 
-      <div class="text-center mb-10">
-        <img src="brand_assets/showtime.png" alt="Showtime Pools" class="h-16 w-auto mx-auto mb-5" />
-        <h2 class="font-display font-bold text-charcoal text-3xl mb-3" style="letter-spacing:-0.02em;">Get My Pool Tile Cleaning Quote</h2>
-        <p class="text-muted text-base leading-[1.75]">Tell us about your pool and we'll reach out with a clear recommendation and pricing.</p>
+      <!-- Panel 1: Trust / Intro -->
+      <div id="modal-panel-1">
+        <div style="background:#162040;padding:32px 28px 28px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
+            <div>
+              <img src="brand_assets/showtime.png" alt="Showtime Pools" style="height:44px;width:auto;margin-bottom:14px;filter:brightness(0) invert(1);" />
+              <div style="font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4DB7E5;margin-bottom:10px;">Los Angeles Pool Experts</div>
+              <h2 style="color:#fff;font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em;">Get a Free Estimate</h2>
+              <p style="color:rgba(255,255,255,.68);font-size:.88rem;line-height:1.65;margin:0;">We'll review your pool and send a clear recommendation — no pressure, no obligation.</p>
+            </div>
+            <button onclick="closeQuoteModal()" style="background:rgba(255,255,255,.12);border:none;color:#fff;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;" aria-label="Close modal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+        <div style="padding:28px 28px 24px;">
+          <ul style="list-style:none;padding:0;margin:0 0 22px;">
+            <li style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #EAF8FD;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#22C7C7;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span style="font-size:.9rem;color:#1F2933;font-weight:500;line-height:1.4;">Free estimate — no obligation</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #EAF8FD;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#22C7C7;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span style="font-size:.9rem;color:#1F2933;font-weight:500;line-height:1.4;">Response within 1 business day</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #EAF8FD;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#22C7C7;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span style="font-size:.9rem;color:#1F2933;font-weight:500;line-height:1.4;">Upfront, transparent pricing</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;padding:11px 0;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#22C7C7;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span style="font-size:.9rem;color:#1F2933;font-weight:500;line-height:1.4;">Serving all of Greater Los Angeles</span>
+            </li>
+          </ul>
+          <a href="https://app.showtimepoolmechanics.com/widget/form/tH1eoDpRA4hMEb04GgzX" target="_blank" rel="noopener" data-cta="tile-cleaning-quote" data-cta-location="modal" style="width:100%;background:linear-gradient(135deg,#0E6BA8,#0A5C8F);color:#fff;text-decoration:none;padding:16px;border-radius:12px;font-size:1rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 16px rgba(14,107,168,.3),0 1px 4px rgba(14,107,168,.2);margin-bottom:14px;box-sizing:border-box;">
+            Fill Out the Estimate Form
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+            <div style="flex:1;height:1px;background:#D8EAF2;"></div>
+            <span style="font-size:.78rem;color:#5F6B76;font-weight:600;">or</span>
+            <div style="flex:1;height:1px;background:#D8EAF2;"></div>
+          </div>
+          <a href="tel:3234982131" data-cta="call-text" data-cta-location="modal" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:2px solid #0E6BA8;color:#0E6BA8;background:#fff;padding:14px;border-radius:12px;font-size:.95rem;font-weight:700;text-decoration:none;box-sizing:border-box;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.19 19.79 19.79 0 010 2a2 2 0 012-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Call (323) 498-2131
+          </a>
+          <p style="text-align:center;font-size:.78rem;color:#5F6B76;margin:16px 0 0;line-height:1.6;">
+            <span style="color:#22C7C7;font-weight:700;">&#10003;</span> No spam &nbsp;&middot;&nbsp;
+            <span style="color:#22C7C7;font-weight:700;">&#10003;</span> No pressure &nbsp;&middot;&nbsp;
+            <span style="color:#22C7C7;font-weight:700;">&#10003;</span> Fast response
+          </p>
+        </div>
       </div>
 
-      <!-- Success state -->
-      <div id="form-success" class="hidden text-center py-10 px-6 rounded-2xl" style="background:linear-gradient(135deg,rgba(14,107,168,.07),rgba(77,183,229,.05));border:1.5px solid #D8EAF2;">
-        <div class="w-16 h-16 rounded-full mx-auto mb-5 flex items-center justify-center" style="background:linear-gradient(135deg,#0E6BA8,#2A96D5);">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <!-- Panel 2: Form -->
+      <div id="modal-panel-2" style="display:none;">
+        <div style="background:#162040;padding:24px 28px 20px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+            <div>
+              <h2 style="color:#fff;font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;line-height:1.2;margin:0 0 4px;letter-spacing:-.02em;">Request Your Quote</h2>
+              <p style="color:rgba(255,255,255,.62);font-size:.82rem;margin:0;line-height:1.5;">We'll be in touch within 1 business day</p>
+            </div>
+            <button onclick="closeQuoteModal()" style="background:rgba(255,255,255,.12);border:none;color:#fff;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;" aria-label="Close modal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
         </div>
-        <h3 class="font-display font-bold text-charcoal text-2xl mb-3">Request Received!</h3>
-        <p class="text-muted text-base leading-[1.75] mb-4">We'll be in touch shortly to review your pool tile cleaning request.</p>
-        <p class="text-blue-deep text-sm font-semibold">You can also text photos to (323) 498-2131 right now to help us prepare your quote.</p>
+        <div style="padding:24px 28px 28px;">
+          <div id="modal-form-success" style="display:none;text-align:center;padding:24px 0;">
+            <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0E6BA8,#2A96D5);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h3 style="font-family:'Playfair Display',serif;font-weight:700;color:#1F2933;font-size:1.3rem;margin:0 0 10px;">Request Received!</h3>
+            <p style="color:#5F6B76;font-size:.9rem;line-height:1.75;margin:0 0 10px;">We'll be in touch shortly about your pool tile cleaning request.</p>
+            <p style="color:#0E6BA8;font-size:.85rem;font-weight:600;margin:0;">Text photos to (323) 498-2131 to help us prep your quote faster.</p>
+          </div>
+          <form id="modal-quote-form" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <label class="form-label" for="m-first-name">First Name <span style="color:#0E6BA8;">*</span></label>
+                <input class="form-input" type="text" id="m-first-name" name="first_name" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <label class="form-label" for="m-last-name">Last Name <span style="font-size:.72rem;font-weight:400;color:#5F6B76;">(optional)</span></label>
+                <input class="form-input" type="text" id="m-last-name" name="last_name" placeholder="Smith" autocomplete="family-name" />
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <label class="form-label" for="m-phone">Phone <span style="color:#0E6BA8;">*</span></label>
+                <input class="form-input" type="tel" id="m-phone" name="phone" placeholder="(323) 555-0100" required autocomplete="tel" />
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <label class="form-label" for="m-email">Email <span style="font-size:.72rem;font-weight:400;color:#5F6B76;">(optional)</span></label>
+                <input class="form-input" type="email" id="m-email" name="email" placeholder="jane@example.com" autocomplete="email" />
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px;">
+              <label class="form-label" for="m-needs">What needs cleaning? <span style="font-size:.72rem;font-weight:400;color:#5F6B76;">(optional)</span></label>
+              <textarea class="form-input" id="m-needs" name="needs" rows="2" placeholder="e.g. Heavy calcium on waterline tile..." style="resize:vertical;"></textarea>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
+              <label class="form-label" for="m-zip">ZIP Code <span style="font-size:.72rem;font-weight:400;color:#5F6B76;">(optional)</span></label>
+              <input class="form-input" type="text" id="m-zip" name="zip" placeholder="90210" autocomplete="postal-code" style="max-width:140px;" />
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;background:rgba(14,107,168,.06);border:1px solid rgba(14,107,168,.14);border-radius:10px;padding:12px 14px;margin-bottom:18px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E6BA8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.19 19.79 19.79 0 010 2a2 2 0 012-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              <p style="font-size:.82rem;color:#0E6BA8;line-height:1.6;margin:0;">Text photos to <strong>(323) 498-2131</strong> after submitting — speeds up your quote.</p>
+            </div>
+            <button type="submit" style="width:100%;background:linear-gradient(135deg,#0E6BA8,#0A5C8F);color:#fff;border:none;padding:15px;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 16px rgba(14,107,168,.3);margin-bottom:10px;">
+              Request My Quote
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button type="button" onclick="showModalPanel1()" style="width:100%;background:none;border:none;color:#5F6B76;font-size:.82rem;cursor:pointer;padding:8px;text-align:center;">&#8592; Back</button>
+          </form>
+        </div>
       </div>
 
-      <form id="quote-form" novalidate>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-          <div class="flex flex-col gap-1.5">
-            <label class="form-label" for="first-name">First Name <span class="text-blue-deep">*</span></label>
-            <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Jane" required autocomplete="given-name" />
-          </div>
-          <div class="flex flex-col gap-1.5">
-            <label class="form-label" for="last-name">Last Name <span class="text-muted text-xs font-normal">(optional)</span></label>
-            <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Smith" autocomplete="family-name" />
-          </div>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-          <div class="flex flex-col gap-1.5">
-            <label class="form-label" for="phone">Phone Number <span class="text-blue-deep">*</span></label>
-            <input class="form-input" type="tel" id="phone" name="phone" placeholder="(323) 555-0100" required autocomplete="tel" />
-          </div>
-          <div class="flex flex-col gap-1.5">
-            <label class="form-label" for="email">Email <span class="text-muted text-xs font-normal">(optional)</span></label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" />
-          </div>
-        </div>
-        <div class="flex flex-col gap-1.5 mb-5">
-          <label class="form-label" for="needs">What needs cleaning? <span class="text-muted text-xs font-normal">(optional)</span></label>
-          <textarea class="form-input" id="needs" name="needs" rows="3" placeholder="e.g. Heavy calcium buildup on waterline tile, pool hasn't been professionally cleaned in 3 years..." style="resize:vertical;"></textarea>
-        </div>
-        <div class="flex flex-col gap-1.5 mb-8">
-          <label class="form-label" for="zip">ZIP Code <span class="text-muted text-xs font-normal">(optional)</span></label>
-          <input class="form-input" type="text" id="zip" name="zip" placeholder="90210" autocomplete="postal-code" style="max-width:180px;" />
-        </div>
-
-        <div class="flex items-start gap-3 rounded-xl px-5 py-4 mb-7" style="background:rgba(14,107,168,.06);border:1px solid rgba(14,107,168,.15);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E6BA8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.19 19.79 19.79 0 010 2a2 2 0 012-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          <p class="text-blue-deep text-sm leading-[1.75]">You can <strong>text photos of your tile line</strong> to <a href="tel:3234982131" class="font-bold hover:text-blue-mid transition-colors">(323) 498-2131</a> after submitting — this helps us prepare your quote faster.</p>
-        </div>
-
-        <button type="submit" class="btn-primary w-full justify-center" style="font-size:1.05rem;padding:18px 32px;">
-          Request My Tile Cleaning Quote
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-        <p class="text-center text-muted text-xs mt-5 leading-relaxed">By submitting, you agree to be contacted about your pool tile cleaning request. No spam, ever.</p>
-      </form>
-      <!--
-        === CRM / WEBHOOK INTEGRATION ===
-        GoHighLevel: POST to https://backend.leadconnectorhq.com/hooks/YOUR_HOOK_ID
-        Webhook:     POST to your custom endpoint
-        Formspree:   POST to https://formspree.io/f/YOUR_FORM_ID
-        Fields: first_name, last_name, phone, email, needs, zip
-      -->
     </div>
   </div>
-</section>
-
-</main>
+</div>
 
 <!-- ================================================================
      FOOTER — clean white/light blue, no dark navy
@@ -1194,8 +1181,34 @@
   updateCountdown();
   setInterval(updateCountdown, 1000);
 
-  // Form submit
-  document.getElementById('quote-form').addEventListener('submit', async e => {
+  // ─── Quote Modal ──────────────────────────────────────────────
+  function openQuoteModal() {
+    document.getElementById('quote-modal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    showModalPanel1();
+  }
+  function closeQuoteModal() {
+    document.getElementById('quote-modal').style.display = 'none';
+    document.body.style.overflow = '';
+    sessionStorage.setItem('modal-dismissed', '1');
+  }
+  function showModalPanel1() {
+    document.getElementById('modal-panel-1').style.display = 'block';
+    document.getElementById('modal-panel-2').style.display = 'none';
+  }
+  function showModalPanel2() {
+    document.getElementById('modal-panel-1').style.display = 'none';
+    document.getElementById('modal-panel-2').style.display = 'block';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeQuoteModal(); });
+
+  // 10-second auto-show delay
+  if (!sessionStorage.getItem('modal-dismissed')) {
+    setTimeout(openQuoteModal, 10000);
+  }
+
+  // Modal form submit
+  document.getElementById('modal-quote-form').addEventListener('submit', async e => {
     e.preventDefault();
     const form = e.target, btn = form.querySelector('button[type="submit"]');
     if (!form.first_name.value.trim() || !form.phone.value.trim()) {
@@ -1218,19 +1231,19 @@
     console.log('Lead payload:', payload);
     await new Promise(r => setTimeout(r, 800));
     form.style.display = 'none';
-    document.getElementById('form-success').classList.remove('hidden');
+    document.getElementById('modal-form-success').style.display = 'block';
     btn.innerHTML = orig; btn.disabled = false;
   });
 
   // CTA tracking
-  document.querySelectorAll('[data-cta]').forEach(el =>
+  document.querySelectorAll('[data-cta]').forEach(el => {
     el.addEventListener('click', () => {
       const ev = { event:'cta_click', cta:el.dataset.cta, location:el.dataset.ctaLocation||'unknown' };
       // window.dataLayer?.push(ev);  // GA4
       // window.fbq?.('track','Lead',ev);  // Meta Pixel
       console.log('[CTA]', ev);
-    })
-  );
+    });
+  });
 </script>
 
 </body>
